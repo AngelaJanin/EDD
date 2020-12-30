@@ -1,0 +1,4 @@
+1,29000,Joaquín de la Peña,22/09/1998,ASD345FDSF,Programador
+2,30000,Mariela de la Peña,22/09/1998,ASD345FDSF,Programador
+3,31000,Carmela de la Peña,22/09/1998,ASD345FDSF,Programador
+4,32000,Victoria de la Peña,22/09/1998,ASD345FDSF,Programador
