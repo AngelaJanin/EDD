@@ -1,0 +1,10 @@
+<!--
+Archivo de descripción para el árbol XML.
+-->
+
+<!ELEMENT Directorio (#PCDATA) >
+<!ELEMENT Ciudad (#PCDATA) >
+<!ATTLIST Ciudad nombre CDATA #REQUIRED >
+<!ATTLIST Ciudad estado CDATA #REQUIRED >
+<!ATTLIST Ciudad primeraCoord CDATA #REQUIRED >
+<!ATTLIST Ciudad segundaCoord CDATA #REQUIRED >
