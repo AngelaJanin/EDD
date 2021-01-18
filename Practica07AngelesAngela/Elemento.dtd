@@ -1,0 +1,10 @@
+<!--
+Archivo de descripción para el árbol XML.
+-->
+
+<!ELEMENT tabla (#PCDATA) >
+<!ELEMENT elemento (#PCDATA) >
+<!ATTLIST elemento nombre CDATA #REQUIRED >
+<!ATTLIST elemento simbolo CDATA #REQUIRED >
+<!ATTLIST elemento numero CDATA #REQUIRED >
+<!ATTLIST elemento masa CDATA #REQUIRED >

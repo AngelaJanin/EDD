@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Archivo de configuración de ANT para compilar la practica 5 del curso de Estructuras de Datos.
+Contiene los siguientes comandos:
+* clean - Borra tanto las clases, como el JAR como el JavaDoc generado.
+* build - Compila el código fuente *.java en binarios de Java *.class 
+* jar - Compila el código fuente *.java y empaqueta los resultados en un archivo
+	ejecutable *.jar-->
+
+<project>
+  <target name="clean" >
+    <delete dir="build" />
+  </target>
+  <target name="build" >
+    <mkdir dir="build/classes" />
+    <javac srcdir="src" destdir="build/classes" debug="true" debuglevel="lines,vars,source" >
+    </javac>
+  </target>
+  <target name="jar" >
+    <antcall target="build" />
+    <mkdir dir="build/jar" />
+    <!-- TODO cambiar el nombre del JAR -->
+    <jar destfile="build/jar/Practica07.jar" basedir="build/classes" >
+      <manifest >
+	<attribute name="DependencyFinder" value="main" />
+	<!-- TODO SET MAIN CLASS -->
+	<attribute name="Main-Class" value="fciencias.edatos.practica07.Calculadora" />
+      </manifest >
+    </jar >
+  </target>
+  <target name="run" >
+    <!-- TODO usar el nombre del JAR que será generado -->
+    <java jar="build/jar/Practica07.jar" fork="true" >
+      <arg value="${arg0}" />
+      <arg value="${arg1}" />
+      <arg value="${arg2}" />
+      <arg value="${arg3}" />
+      <arg value="${arg4}" />
+      <arg value="${arg5}" />
+      <arg value="${arg6}" />
+      <arg value="${arg7}" />
+    </java>
+  </target >
+</project>
