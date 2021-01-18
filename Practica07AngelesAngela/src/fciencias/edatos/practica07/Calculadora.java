@@ -20,7 +20,7 @@ public class Calculadora {
 	*/
     private boolean validaEntrada(String[] entrada){
         for(int i = 0; i < entrada.length; i++){
-            if(!entrada[i].matches("[A-Z]+[a-zA-Z]*\\d*")){
+            if(!entrada[i].matches("[A-Z][a-z]*\\d*")){
                 System.out.println("\n¡Atención! " + entrada[i] + " no parece una sustancia correcta"  + "\n");
                 return false;
             }
@@ -63,7 +63,7 @@ public class Calculadora {
     //Auxiliar que imprime las opciones del usuario en consola
     private void menu(){
         System.out.println("¡Hola! Elige una opción:" + "\n" +
-        "    1: Escribe una sustancia a calcular"+ "\n" +
+        "    1: Escribir una sustancia a calcular"+ "\n" +
         "    2: Salir del programa"+ "\n");
     }
 
