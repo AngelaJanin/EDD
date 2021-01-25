@@ -1,0 +1,8 @@
+<!--
+Archivo de descripción para el árbol XML.
+-->
+
+<!ELEMENT Storage (#PCDATA) >
+<!ELEMENT Item (#PCDATA) >
+<!ATTLIST Item word CDATA #REQUIRED >
+<!ATTLIST Item size CDATA #REQUIRED >

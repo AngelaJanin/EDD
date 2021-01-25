@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Storage SYSTEM "Storage.dtd">
+<Storage>
+  <Item size="11" word="Computadora"/>
+  <Item size="5" word="Ratón"/>
+  <Item size="10" word="Escritorio"/>
+  <Item size="7" word="Lápices"/>
+  <Item size="7" word="Teclado"/>
+</Storage>
